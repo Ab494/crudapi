@@ -1,1 +1,1 @@
-web: gunicorn tasks.wsgi:application
+web gunicorn crudapi.wsgi:application
