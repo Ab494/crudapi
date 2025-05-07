@@ -9,7 +9,7 @@ from django.shortcuts import redirect
 
 schema_view = get_schema_view(
     openapi.Info(
-    title = "crudapi",
+    title = "CrudAPI",
     default_version = 'v1',
     description = "API for user registration, authentication and task management using Django REST framework.",
     contact = openapi.Contact(email="cheruiyotevans646@gmail.com"),

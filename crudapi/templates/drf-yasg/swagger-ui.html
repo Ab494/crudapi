@@ -1,0 +1,29 @@
+{% load load static %} 
+<!DOCTYPE html>
+<html>
+<haed>
+    <title>API Docs</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'drf-yasg/swagger-ui.css' %}">
+    <script src="{% static 'drf-yasg/swagger-ui.bundle.js' %}"></script>
+    <script src="{% static 'drf-yasg/swagger-ui.standalone-preset.js' %}"></script>
+
+</head>
+<body>
+    <div style="text-align: center; padding: 10px;">
+        <img src="{% static 'images/logo.png' %}" alt="CrudAPI Logo" style="max-height: 80px;">
+        <h1>CrudAPI Documentation</h1>
+    </div>
+    <div id="Swagger-ui"></div>
+
+    <script>
+        const ui = SwaggerUIBundle({
+            url: "{% url 'schema-json' %}",
+            dom-id: '#swagger-ui',
+            presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIStandalonePreset
+            ],
+            layout: "StandaloneLayout"
+        });
+    </script>
+</html>
