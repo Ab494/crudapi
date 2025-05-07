@@ -5,6 +5,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from django.shortcuts import redirect
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -19,6 +20,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
+    path('', lambda request: redirect('swagger/')),
     path('admin/', admin.site.urls),
     path('api/', include('tasks.urls')),
     path('api-token-auth/', obtain_auth_token),
