@@ -1,0 +1,50 @@
+gitignore
+python
+_pycache_
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+Virtual environments
+env/
+venv/
+ENV/
+*.env
+*.venv
+
+Django/Migrations
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.mo
+*.py~
+
+Django cache and compiled files
+*.log
+*.pot
+*.pyc
+*.py~
+*.mo
+
+Unit test / coverage reports 
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.coverage.pytest_cache/
+
+IDEs
+.vscode
+.idea/
+
+OS files
+.DS_Store
+Thumbs.db
+
+Static/media files
+staticfiles/
+media/
+
