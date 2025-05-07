@@ -1,1 +1,0 @@
-web: gunicorn crudapi.wsgi:application
