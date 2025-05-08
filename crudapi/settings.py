@@ -163,3 +163,6 @@ REST_FRAMEWORK = {
 LOGIN_REDIRECT_URL = '/api/tasks/'
 
 LOGOUT_REDIRECT_URL = '/'
+
+
+
