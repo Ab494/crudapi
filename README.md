@@ -24,6 +24,7 @@ bash
 git clone https://github.com/Ab494/crudapi.git
 
 cd crudapi
+
 2. *Create a virtual environment and activate it*
 
 bash
