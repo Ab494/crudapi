@@ -11,6 +11,16 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+from tasks import migrations
+
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'crudapi.settings')
 
 application = get_wsgi_application()
+
+
+from django.core.management import call_command
+try:
+    call_command('run_migrations')
+except Exception as e:
+    print(f"Migration failed: {e}")
