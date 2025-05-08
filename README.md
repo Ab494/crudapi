@@ -15,4 +15,10 @@ A Django Rest Framework-based API for user registration, authentication and task
 - Django Rest Framework
 - drf-yasg (Swagger documentation)
 - SQLite (development database)
-- Render (deployment platform)
+- Render (deployment platform
+## Setup Instructions
+1. *Clone the repository*
+  bash
+git clone https://github.com/Ab494/crudapi.git
+   cd crudapi
+   
