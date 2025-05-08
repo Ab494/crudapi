@@ -17,8 +17,11 @@ A Django Rest Framework-based API for user registration, authentication and task
 - SQLite (development database)
 - Render (deployment platform
 ## Setup Instructions
-1.## *Clone the repository*
+1. *Clone the repository*
+
   *bash
+  
 *git clone https://github.com/Ab494/crudapi.git
+
    *cd crudapi
    
