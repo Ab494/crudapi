@@ -1,29 +1,38 @@
-{% load load static %} 
+{% load static %}  
 <!DOCTYPE html>
-<html>
-<haed>
-    <title>API Docs</title>
-    <link type="text/css" rel="stylesheet" href="{% static 'drf-yasg/swagger-ui.css' %}">
-    <script src="{% static 'drf-yasg/swagger-ui.bundle.js' %}"></script>
-    <script src="{% static 'drf-yasg/swagger-ui.standalone-preset.js' %}"></script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ schema.info.title }}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'drf-yasg/swagger-ui.css' %}">
+        <link rel="icon" type="image/png" href="{% static 'drf-yasg/favicon-32x32.png' %}" sizes="32x32" />
+        <link rel="icon" type="image/png" href="{% static 'drf-yasg/favicon-16x16.png' %}" sizes="16x16" />
+        
+    </head>
 
-</head>
-<body>
-    <div style="text-align: center; padding: 10px;">
-        <img src="{% static 'images/logo.png' %}" alt="CrudAPI Logo" style="max-height: 80px;">
-        <h1>CrudAPI Documentation</h1>
-    </div>
-    <div id="Swagger-ui"></div>
+    <body>
+        <div class="logo-container">
+            <img src="{% static 'images/logo.png' %}" alt="Logo">
+        </div>
+        <div id="swagger-ui"></div>
+        <script src="{% static 'drf-yasg/swagger-ui-bundle.js' %}"></script>
+        <script src="{% static 'drf-yasg/swagger-ui-standalone.js' %}"></script>
+        <script>
+            window.onload = function() {
+                const ui = SwaggerUIBundle({
+                    url: "{% url schema_url %}",
+                    dom_id: #swagger-ui,
+                    presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIStandalonePreset
+                    ],
+                    layout: "StandaloneLayeout"
+                });
+                window.ui = ui;
+            };
+        </script>
 
-    <script>
-        const ui = SwaggerUIBundle({
-            url: "{% url 'schema-json' %}",
-            dom-id: '#swagger-ui',
-            presets: [
-            SwaggerUIBundle.presets.apis,
-            SwaggerUIStandalonePreset
-            ],
-            layout: "StandaloneLayout"
-        });
-    </script>
+        
+
+    </body>
 </html>

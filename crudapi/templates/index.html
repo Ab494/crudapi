@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Welcome | Django API</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootsrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f8f9fa;
+                font-family: 'Segoe UI', Tahoma, Geneva, Vardana, sans-serif;
+
+            } 
+
+            .hero {
+                padding: 5% 3%;
+                text-align: center;
+
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 2.2rem;
+            }
+            .lead {
+                font-size: 1.1rem;
+                color: #6c757d;
+
+            }
+            btn-custom {
+                margin: 0.5rem 0.3rem;
+                font-size: 1rem;
+                width: 90%;
+                max-width: 300px;
+            }
+
+            @media (min-width: 768px) {
+                h1 {font-size: 3rem;}
+                .lead {font-size: 1.25rem;}
+                .btn-custom { font-size: 1:1rem; width: auto;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container hero">
+            <h1>Django API is Live</h1>
+            <p class="lead">Built with Django + DRF, deployed on Render. Mobile ready and clean.</p>
+            <div class="d-flex flex-column align-items-center">
+                <a href="/api/" class="btn btn-primary btn-custom">View API</a>
+                <a href="/swagger/" class="btn btn-outline-dark btn-custom">Swagger Docs</a>
+                <a href="/redoc/" class="btn btn-info text-white btn-custom">ReDoc</a>
+            </div>
+        </div>
+            
+    </body>
+
+    </head>
+</html>

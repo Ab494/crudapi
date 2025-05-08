@@ -1,0 +1,10 @@
+.logo-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.log-container img {
+    height: 80px;
+}
