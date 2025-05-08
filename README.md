@@ -19,11 +19,11 @@ A Django Rest Framework-based API for user registration, authentication and task
 ## Setup Instructions
 1. *Clone the repository*
 
-  *bash
+bash
   
-*git clone https://github.com/Ab494/crudapi.git
+git clone https://github.com/Ab494/crudapi.git
 
-   *cd crudapi
+cd crudapi
 2. *Create a virtual environment and activate it*
 
 bash
@@ -59,7 +59,7 @@ env/scripts/activate  # On Windows
    ## Author
    ## Evans kipngeno cheruiyot
 
-   LinkedIn: https:www.linkein.com/in/evans-cheruiyot-448458346
+   LinkedIn: https:www.linkedin.com/in/evans-cheruiyot-448458346
 
 ## License
 This project is licensed under the MIT License
