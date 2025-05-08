@@ -10,6 +10,8 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from django.utils.decorators import method_decorator
+from django.http import HttpResponse
+from django.core.management import call_command
 
 
 from rest_framework import viewsets
@@ -17,6 +19,14 @@ from . models import Task
 from . serializers import TaskSerializer, RegisterSerializer, UserSerializer, UserProfileSerializer
 from rest_framework import viewsets, permissions
 from rest_framework.permissions import IsAuthenticated
+
+def run_migrations(request):
+    try:
+        call_command('migrate')
+        return HttpResponse("Migrations applied successfully.")
+    except Exception as e:
+        return HttpResponse(f"Migrations failed: {e}, status=500")
+
 
 @method_decorator(name='list', decorator=swagger_auto_schema(
     operation_description = "List all tasks.", tags=["Tasks"]

@@ -4,7 +4,7 @@ from .views import TaskViewSet, RegisterView
 from rest_framework.urlpatterns import format_suffix_patterns
 from . views import user_profile
 from . views import UserProfileView
-
+from . views import run_migrations
 router = DefaultRouter()
 router.register(r'tasks', TaskViewSet, basename='task')
 
@@ -13,4 +13,6 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     path('profile/', user_profile, name='user_profile'),
     path('api/profile/', UserProfileView.as_view(), name='user-profile'),
+    path('run-migrations/', run_migrations),
+
 ]
