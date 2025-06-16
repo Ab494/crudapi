@@ -1,5 +1,12 @@
 # CrudAPI
-A Django Rest Framework-based API for user registration, authentication and task management.
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-4.x-green.svg)](https://www.djangoproject.com/)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://crudapi-bwfv.onrender.com/swagger/)
+[![Deployment](https://img.shields.io/badge/render-live-blue.svg)](https://crudapi-bwfv.onrender.com/swagger/)
+
+A Django Rest Framework-based API for user registration, authentication, and task management 
 
  ## Live Demo
 [Visit Swagger Docs] https://crudapi-bwfv.onrender.com/swagger/
@@ -65,12 +72,3 @@ env/scripts/activate  # On Windows
 ## License
 This project is licensed under the MIT License
    
-# CrudAPI
-
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/Django-4.x-green.svg)](https://www.djangoproject.com/)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://crudapi-bwfv.onrender.com/swagger/)
-[![Deployment](https://img.shields.io/badge/render-live-blue.svg)](https://crudapi-bwfv.onrender.com/swagger/)
-
-A Django Rest Framework-based API for user registration, authentication, and task management.
