@@ -67,7 +67,7 @@ env/scripts/activate  # On Windows
    ## Author
    ## Evans kipngeno cheruiyot
 
-   LinkedIn: https:www.linkedin.com/in/evans-cheruiyot-448458346
+   LinkedIn: https://www.linkedin.com/in/evans-kipngeno-cheruiyot-448458346
 
 ## License
 This project is licensed under the MIT License
